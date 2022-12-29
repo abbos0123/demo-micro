@@ -1,0 +1,11 @@
+spring:
+ application:
+   name: eureka-server
+ cloud:
+   config:
+     uri: http://loclahost:8888
+
+   loadbalancer:
+     ribbon:
+       enable: false
+

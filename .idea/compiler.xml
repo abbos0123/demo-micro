@@ -8,12 +8,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="config-server" />
+        <module name="eureka-server" />
         <module name="card-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="card-service" target="17" />
       <module name="config-server" target="17" />
+      <module name="eureka-server" target="17" />
       <module name="licensing-service" target="17" />
     </bytecodeTargetLevel>
   </component>
@@ -21,6 +23,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="card-service" options="-parameters" />
       <module name="config-server" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
       <module name="licensing-service" options="-parameters" />
     </option>
   </component>
