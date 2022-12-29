@@ -1,29 +1,21 @@
-package com.example.cardservice.module;
+package com.example.cardservice.mapper;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
  * Author: Abbos Fayziboev
- * Date: 28/12/22
+ * Date: 29/12/22
  * Email: abbosFayziboev@gmail.com
  */
-
-@Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "cards")
-@Builder
-public class Card {
-   @Id
-   @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class CardMapper {
     private Long id;
     private String name;
     private Double amount;
-    private String number;
-
+    private String cardNumber;
 }
+

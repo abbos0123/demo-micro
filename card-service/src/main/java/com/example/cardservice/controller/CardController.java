@@ -21,7 +21,6 @@ public class CardController {
     public CardController(CardService cardService) {
         this.cardService = cardService;
     }
-
     @GetMapping("/{number}")
     public Card getCardByNumber(@PathVariable String number) {
         return cardService.getCard(number);
@@ -29,16 +28,15 @@ public class CardController {
 
     @PostMapping("/save")
     public Card saveCard(@RequestBody Card card) {
-        return cardService.addCard(card);
+         return cardService.addCard(card);
     }
-
 
     @GetMapping("/all")
     public List<Card> getAllCards() {
         return cardService.getAllCards();
     }
 
-    @DeleteMapping("/number")
+    @DeleteMapping("/{number}")
     public boolean deleteCard(@PathVariable String number) {
         return cardService.deleteCard(number);
     }

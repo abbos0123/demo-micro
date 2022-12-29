@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="demo-microservice-databasa@localhost" uuid="e7b19947-6f32-4794-b3f6-4c19cbc64e91">
+    <data-source source="LOCAL" name="demo-card-db@localhost" uuid="12714219-8f30-4618-9649-cf02bd6e16d9">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/demo-microservice-databasa</jdbc-url>
+      <jdbc-url>jdbc:postgresql://localhost:5432/demo-card-db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
